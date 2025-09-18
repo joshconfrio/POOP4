@@ -1,0 +1,63 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package poop4j;
+
+/**
+ *
+ * @author joshy
+ */
+public class Perro {
+    
+//Atributos
+    String nombre;
+    String color;
+    String raza;
+    int numPatas;
+    int numOrejas;
+    
+    //Método constructor vacío
+    public Perro(){
+    
+    }
+    
+    //Método constructor con parámetros
+    public Perro(String nombre, String color, String raza, int numPatas, int numOrejas){
+        this.nombre = nombre;
+        this.color = color;
+        this.raza = raza;
+        this.numPatas = numPatas;
+        this.numOrejas = numOrejas;
+    }
+    
+    //Métodos de acción
+    public void ladrar(){
+        System.out.println(nombre + " ¡Guau guau!");
+    }
+    
+    public void comer(){
+        System.out.println(nombre + " está comiendo.");
+    }
+    
+    public void dormir(){
+        System.out.println(nombre + " está durmiendo.");
+    }
+    
+    public void correr(){
+        System.out.println(nombre + " está corriendo.");
+    }
+    
+    public void jugar(){
+        System.out.println(nombre + " está jugando.");
+    }
+    
+    //Método para imprimir atributos
+    public void imprimirPerro(){
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Color: " + color);
+        System.out.println("Raza: " + raza);
+        System.out.println("Número de patas: " + numPatas);
+        System.out.println("Número de orejas: " + numOrejas);
+    }
+}
